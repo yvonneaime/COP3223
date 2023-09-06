@@ -10,6 +10,7 @@
 int main() {
 	
    float length, width, height;
+   // Asks user the dimensions of the box (length, width, height).
    printf("Please enter the length of a box (in inches).\n");
    scanf("%f", &length);
    printf("Please enter the width height of a box (in inches).\n");
@@ -21,10 +22,11 @@ int main() {
    // Prints out user input of box dimensions (length, width, and height).
    printf("Length: %f \nWidth: %f \nHeight: %f \n\n", length, width, height );
    
-   // Volume of dimensions in inches 
+   // Volume of dimensions in inches. 
    float volumeinch = length * width * height;
    printf("The volume is %lf cubic inches.\n", volumeinch);
-   
+
+   // Volume of dimensions in feet. 
    float volumefeet = (length/12)*(width/12)*(height/12);
    printf("The volume is %lf cubic feet.\n", volumefeet);
     
